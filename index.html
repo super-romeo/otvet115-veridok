@@ -8,6 +8,10 @@
 <meta name="description" content="Банк запросил документы по 115-ФЗ? Разбор запроса, опись документов к каждой операции и черновик пояснительного письма об экономическом смысле.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Ответ банку</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Ответ банку</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Банк прислал запрос по 115-ФЗ — ответ с документами к каждой операции и пояснением, а не наугад</h1>
-    <p class="sub">Для ИП и малых ООО без своего юриста: вы присылаете запрос банка и выписку, мы разбираем, какие операции вызвали вопрос, сопоставляем их с договорами, актами и УПД, собираем опись приложений и черновик письма об экономическом смысле. Если банк всё же отказал — черновик жалобы в МВК.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Сервис в подготовке · Оплата на этой странице не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для ИП и малых ООО без своего юриста</p>
+      <h1 class="rise" style="--i:1" data-len="long">Банк прислал запрос по 115-ФЗ&nbsp;<span class="soft">— ответ с документами к каждой операции и пояснением, а не наугад</span></h1>
+      <p class="rise" style="--i:2">Для ИП и малых ООО без своего юриста: вы присылаете запрос банка и выписку, мы разбираем, какие операции вызвали вопрос, сопоставляем их с договорами, актами и УПД, собираем опись приложений и черновик письма об экономическом смысле. Если банк всё же отказал — черновик жалобы в МВК.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Сервис в подготовке · Оплата на этой странице не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="130" y="160" font-size="40" fill="#0a1524" font-weight="600">Ответ банку</text><line x1="80" y1="200" x2="1120" y2="200" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="240" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="200" y="272" font-size="30" fill="#0a1524">Разбор запроса</text><rect x="130" y="340" width="44" height="44" fill="#dfe8f7" rx="8" /><rect x="200" y="350" width="260" height="24" fill="#dde2ea" rx="12" /><rect x="130" y="440" width="44" height="44" fill="#dfe8f7" rx="8" /><text x="200" y="472" font-size="30" fill="#0a1524">Если отказали</text><rect x="130" y="540" width="44" height="44" fill="#dfe8f7" rx="8" /><rect x="200" y="550" width="320" height="24" fill="#dde2ea" rx="12" /><rect x="680" y="240" width="390" height="420" fill="#dfe8f7" rx="20" /><text x="720" y="310" font-size="32" fill="#0a1524" font-weight="600">Пояснительное письмо</text><rect x="730" y="360" width="250" height="28" fill="#12397a" rx="8" /><rect x="730" y="430" width="180" height="28" fill="#ffffff" rx="8" /><rect x="730" y="500" width="220" height="28" fill="#ffffff" rx="8" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>ИП и малых ООО</dd></div>
+      <div><dt>Что</dt><dd>Черновик пояснительного письма</dd></div>
+      <div><dt>Как</dt><dd>Присылаете запрос банка</dd></div>
+      <div><dt>Пока</dt><dd>Сервис в подготовке</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Разбор запроса</b><span>Что именно спрашивает банк и по каким операциям.</span><br><a class="btn" href="price.html" data-ev="feature_razbor">Мне это нужно</a></div>
-      <div class="card"><b>Документы к операциям</b><span>Договор, акт, УПД к каждому спорному платежу.</span><br><a class="btn" href="price.html" data-ev="feature_dokumenty">Мне это нужно</a></div>
-      <div class="card"><b>Пояснительное письмо</b><span>Черновик об экономическом смысле операций.</span><br><a class="btn" href="price.html" data-ev="feature_pismo">Мне это нужно</a></div>
-      <div class="card"><b>Если отказали</b><span>Черновик жалобы в межведомственную комиссию при Банке России.</span><br><a class="btn" href="price.html" data-ev="feature_mvk">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" fill="#0a1524" font-weight="600">Разбор запроса</text><rect x="230" y="190" width="340" height="300" fill="#ffffff" rx="12" stroke="#dde2ea" stroke-width="3" /><rect x="270" y="230" width="200" height="20" fill="#dde2ea" rx="8" /><rect x="270" y="270" width="260" height="16" fill="#b9c3d2" rx="8" /><rect x="270" y="306" width="160" height="16" fill="#dde2ea" rx="8" /><rect x="270" y="342" width="220" height="16" fill="#dde2ea" rx="8" /><circle cx="500" cy="420" r="36" fill="#dfe8f7" /><polyline points="482,420 496,436 524,400" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Разбор запроса</h3><p>Что именно спрашивает банк и по каким операциям.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_razbor">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" fill="#0a1524" font-weight="600">Документы к операциям</text><line x1="140" y1="460" x2="680" y2="460" stroke="#dde2ea" stroke-width="4" /><rect x="160" y="280" width="70" height="180" fill="#dfe8f7" rx="8" /><rect x="290" y="340" width="70" height="120" fill="#dfe8f7" rx="8" /><rect x="420" y="240" width="70" height="220" fill="#12397a" rx="8" /><rect x="550" y="370" width="70" height="90" fill="#dfe8f7" rx="8" /></svg></div>
+        <h3>Документы к операциям</h3><p>Договор, акт, УПД к каждому спорному платежу.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_dokumenty">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="150" width="240" height="300" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="490" y="150" width="240" height="300" fill="#ffffff" rx="16" stroke="#dde2ea" stroke-width="3" /><rect x="100" y="200" width="140" height="16" fill="#dde2ea" rx="8" /><rect x="100" y="236" width="170" height="16" fill="#b9c3d2" rx="8" /><rect x="100" y="272" width="110" height="16" fill="#dde2ea" rx="8" /><polygon points="330,285 400,285 400,265 450,310 400,355 400,335 330,335" fill="#12397a" /><rect x="520" y="210" width="160" height="18" fill="#12397a" rx="8" /><rect x="520" y="250" width="180" height="16" fill="#dde2ea" rx="8" /><rect x="520" y="286" width="130" height="16" fill="#b9c3d2" rx="8" /><text x="100" y="130" font-size="32" fill="#0a1524" font-weight="600">Пояснительное письмо</text></svg></div>
+        <h3>Пояснительное письмо</h3><p>Черновик об экономическом смысле операций.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_pismo">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="140" font-size="34" fill="#0a1524" font-weight="600">Если отказали</text><circle cx="400" cy="340" r="110" fill="#dfe8f7" /><circle cx="400" cy="340" r="78" fill="#ffffff" stroke="#12397a" stroke-width="8" /><polyline points="350,345 385,385 460,300" fill="none" stroke="#12397a" stroke-width="10" /></svg></div>
+        <h3>Если отказали</h3><p>Черновик жалобы в межведомственную комиссию при Банке России.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_mvk">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">ИП-оптовик получает запрос банка: пояснить операции за квартал и приложить документы. Мы разбираем выписку: банк смутили три крупных перевода поставщику и снятие наличных. К переводам находятся договор поставки и УПД, к снятию — расходы на выплату водителям. Опись из 14 документов и письмо на две страницы уходят в банк до срока.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>ИП-оптовик получает запрос банка: пояснить операции за квартал и приложить документы. Мы разбираем выписку: банк смутили три крупных перевода поставщику и снятие наличных. К переводам находятся договор поставки и УПД, к снятию — расходы на выплату водителям. Опись из 14 документов и письмо на две страницы уходят в банк до срока.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">выписку</text><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">договор</text><text x="960" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">письмо</text><rect x="120" y="300" width="960" height="420" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="180" y="390" font-size="36" fill="#0a1524" font-weight="600">14 документов</text><rect x="180" y="450" width="64" height="64" fill="#12397a" rx="8" /><rect x="264" y="450" width="64" height="64" fill="#dfe8f7" rx="8" /><rect x="348" y="450" width="64" height="64" fill="#dde2ea" rx="8" /><rect x="432" y="450" width="64" height="64" fill="#dfe8f7" rx="8" /><rect x="180" y="560" width="420" height="24" fill="#dde2ea" rx="12" /><rect x="180" y="610" width="280" height="18" fill="#b9c3d2" rx="8" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>Банки по закону № 115-ФЗ обязаны разбираться в операциях клиентов и могут запросить пояснения и документы. Для малого бизнеса такой запрос часто приходит неожиданно: короткое письмо с перечнем операций и сроком ответа, а за ним — риск ограничений по счёту.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>Банки по закону № 115-ФЗ обязаны разбираться в операциях клиентов и могут запросить пояснения и документы. Для малого бизнеса такой запрос часто приходит неожиданно: короткое письмо с перечнем операций и сроком ответа, а за ним — риск ограничений по счёту.</p>
     <p>Самая частая ошибка — ответить в спешке: приложить первые попавшиеся документы, не объяснить, зачем совершалась операция, или пропустить часть вопросов. Тогда банк присылает новый запрос, ограничивает дистанционное обслуживание или отказывает в проведении операций.</p>
     <p>Сервис помогает подготовить ответ спокойно и полно. Вы присылаете текст запроса банка и выписку за период, о котором спрашивают. Мы разбираем запрос: какие операции названы, что банк просит пояснить, какие документы ждёт и к какому сроку.</p>
     <p>Затем каждую операцию из запроса сопоставляем с вашими документами: договором, счётом, актом выполненных работ или УПД, накладной. Если какого-то документа не хватает, это видно сразу, и есть время его найти или запросить у контрагента.</p>
@@ -108,31 +142,34 @@
     <p>Чтобы запросов было меньше, по итогам разбора видно, какие операции чаще вызывают вопросы банка, и какие документы стоит готовить заранее.</p>
     <p>Сервис рассчитан на ИП и малые ООО в России без штатного юриста. Сейчас он в подготовке: сначала мы проверяем, нужен ли он предпринимателям.</p>
     <p>Сервис помогает подготовить документы по вашим данным; он не заменяет консультацию юриста, а ответ банку подписываете и отправляете вы.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Что нужно прислать?</h3>
-    <p>Текст запроса банка и выписку за период, о котором спрашивают; документы по операциям — по мере разбора.</p>
-    <h3>Что получится на выходе?</h3>
-    <p>Опись приложений к каждой операции и черновик пояснительного письма об экономическом смысле.</p>
-    <h3>Что делать, если банк отказал?</h3>
-    <p>Можно обратиться в межведомственную комиссию при Банке России; сервис готовит черновик обращения.</p>
-    <h3>Это юридическая консультация?</h3>
-    <p>Нет. Сервис готовит документы по вашим данным; ответ банку подписываете и отправляете вы.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он предпринимателям.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Что нужно прислать?</h3><p>Текст запроса банка и выписку за период, о котором спрашивают; документы по операциям — по мере разбора.</p></div>
+      <div class="split flip"><h3>Что получится на выходе?</h3><p>Опись приложений к каждой операции и черновик пояснительного письма об экономическом смысле.</p></div>
+      <div class="split flip"><h3>Что делать, если банк отказал?</h3><p>Можно обратиться в межведомственную комиссию при Банке России; сервис готовит черновик обращения.</p></div>
+      <div class="split flip"><h3>Это юридическая консультация?</h3><p>Нет. Сервис готовит документы по вашим данным; ответ банку подписываете и отправляете вы.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он предпринимателям.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Пришлите запрос банка</h2>
-    <p><label>Сколько операций в запросе<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>1–3</option><option>4–10</option><option>11–30</option><option>Больше 30</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Пришлите запрос банка</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько операций в запросе<select data-ev-focus="form_start"><option value="">— выберите —</option><option>1–3</option><option>4–10</option><option>11–30</option><option>Больше 30</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Ответ банку</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Подготовка документов по вашим данным. Не юридическая консультация; ответ банку подписываете и отправляете вы.</p>
+  <p>Подготовка документов по вашим данным. Не юридическая консультация; ответ банку подписываете и отправляете вы.</p>
 </div></footer>
 
 </body>
